@@ -1,0 +1,9 @@
+1. inst python and set PATH
+npm --add-python-to-path='true' --debug install --global windows-build-tools
+2. gyp verb `which` failed Error: not found: python2
+node-sass package (the dependency of gulp-sass) supports alpine linux since 4.1.0 (sass/node-sass#1589), installing a newer version of gulp-sass will fix that
+https://github.com/wodby/docker4drupal/issues/321
+3. При загрузке кода в репозитории git загрузка идет из-под определенного пользователя. Где в ide его поменять ?
+http://www.cyberforum.ru/java-ide/thread2434125.html
+4.Change git user in win
+https://htmlblog.github.io/permission-to-denied-to-git-error-403
