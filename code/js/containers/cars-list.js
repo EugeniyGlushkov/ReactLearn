@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from "redux"; //для создания действий
 import {connect} from 'react-redux';
+import {selectCar} from "../actions/index";
 
 class CarsList extends Component {
     showList() {
         return this.props.cars.map (car => {
             return (
-                <li key={car.id}>{car.name}</li>
+                <li onClick={() => this.props.selectCar(car)} key={car.id}>{car.name}</li>
             )
         })
     }
@@ -24,7 +25,13 @@ class CarsList extends Component {
 function mapStateToProps(state) {
     return {
         cars: state.cars
-    }
+    };
 }
 
-export default connect(mapStateToProps)(CarsList);
+//Функция переводит из функции в свойство
+//
+function matchDispatchToProps(dispatch) {
+    return bindActionCreators({selectCar: selectCar}, dispatch)
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(CarsList);
