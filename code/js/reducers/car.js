@@ -2,7 +2,7 @@ export default function () {
     return [
         {
             id: 1,
-            model: 'Audi',
+            name: 'Audi',
             speed: 234,
             weight: 1.4,
             desc: 'R8 is excellent sport car!',
@@ -10,7 +10,7 @@ export default function () {
         },
         {
             id: 2,
-            model: 'BMW',
+            name: 'BMW',
             speed: 260,
             weight: 1.2,
             desc: 'Auto with M is always faster',
@@ -18,7 +18,7 @@ export default function () {
         },
         {
             id: 3,
-            model: 'Mersedes',
+            name: 'Mersedes',
             speed: 250,
             weight: 1.35,
             desc: 'Mersedes is a comfort',
