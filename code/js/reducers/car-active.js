@@ -1,7 +1,9 @@
-export default function (state=null, action) {//начальный state null пока никакая машина не выбрана
+export default function (state={}, action) {//начальный state null пока никакая машина не выбрана
     switch (action.type) {
         case 'CAR_SELECTED':
-            return action.payload;
+            return {
+                ...state,
+                act: action.payload};
             break;
         default:
             return state;

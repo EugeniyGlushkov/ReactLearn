@@ -1,5 +1,5 @@
 export default function () {
-    return [
+    return {cars: [
         {
             id: 1,
             name: 'Audi',
@@ -24,5 +24,5 @@ export default function () {
             desc: 'Mersedes is a comfort',
             img: 'https://img-c.drive.ru/models.large.main.images/0000/000/000/001/536/48d6c326193efadd-main.jpg'
         }
-    ]
+    ]};
 }

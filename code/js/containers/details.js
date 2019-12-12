@@ -15,6 +15,7 @@ class Details extends Component {
                 <br/>
                 <p>{this.props.car.desc}</p>
                 <p>Speed: {this.props.car.speed}, weight: {this.props.car.weight}</p>
+                <p>ID: {this.props.carId}</p>
             </div>
         )
     }
@@ -22,7 +23,8 @@ class Details extends Component {
 
 function mapStateToProps(state) {
     return {
-        car: state.active
+        car: state.active.act,
+        carId: state.carId.id
     }
 }
 
